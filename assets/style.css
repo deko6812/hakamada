@@ -1,0 +1,346 @@
+* {
+    box-sizing: border-box;
+}
+
+*, html {
+    scroll-behavior: smooth;
+}
+
+header {
+    padding-top: 45px;
+}
+
+header,
+header ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header * {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header--p {
+    max-width: 169px;
+    margin: 0;
+}
+
+.header__link {
+    position: relative;
+}
+
+.header__link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1.5px;
+    background-color: black;
+    left: 0;
+    bottom: 0;
+    transition: width 0.15s ease-in-out;
+}
+
+.header__link:hover::after {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    gap: 32.56px;
+}
+
+/* Section 1 */
+.banner--h {
+    font-size: 109.66px;
+    font-family: "Soulmaze", sans-serif;
+    margin: 0;
+}
+
+.banner--h1 {
+    position: relative;
+    color: #9D5C63;
+    /* margin-top: 114px; */
+}
+
+.asterisk {
+    position: absolute;
+    left: 55%;
+    top: -1.75rem;
+    animation: rotatation 3s infinite;
+}
+
+@keyframes rotatation {
+    from {
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.banner--description {
+    font-size: 25.89px;
+    font-family: 'Poppins', sans-serif;
+    max-width: 576px;
+    line-height: 141%;
+    margin-top: 46px;
+}
+
+.banner--displays {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    place-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 37px;
+    margin-bottom: 3.75rem;
+    gap: 3.75rem;
+}
+
+.banner--solo {
+    height: 569px;
+    max-width: 643px;
+    /* min-width: 243px; */
+    background: rgb(0 0 0 / 15%);
+}
+
+.banner--duo {
+    max-width: 680px;
+    height: 395px;
+    background: rgb(0 0 0 / 15%);
+}
+
+.banner--duo:first-of-type {
+    margin-bottom: 3.75rem;
+}
+
+.banner--bg-img {
+    position: relative;
+}
+
+.banner--img {
+    border-top-right-radius: 3.125rem;
+    border-top-left-radius: 3.125rem;
+    height: 650px;
+    width: 100%;
+    background-color: rgb(0 0 0 / 15%);
+    transition: all 0.5s ease;
+
+    transform: translateY(5rem);
+    z-index: -1;
+}
+
+.arrow {
+    opacity: 0;
+    padding: .75rem;
+    background-color: #000000;
+    /* border-radius: 50%; */
+    border: 1px transparent;
+    position: absolute;
+    top: 0;
+    right: 11.125rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.banner--bg-img:hover .arrow {
+    opacity: 1;
+}
+
+/* About section */
+.about {
+    background-color: #9D5C63;
+    color: #ffffff;
+}
+
+.about--h {
+    font-size: 67.77px;
+    font-family: 'Soulmaze', sans-serif;
+    margin: 0;
+    max-width: 470px;
+    padding-top: 3.75rem;
+    margin-bottom: 2.8125rem;
+}
+
+.about--h span {
+    color: #E4BB97;
+}
+
+.about--content-wrapper {
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-bottom: 3.75rem;
+}
+
+.about--content-wrapper p {
+    font-size: 25.89px;
+    line-height: 141%;
+}
+
+.about button {
+    width: 261px;
+    height: 79px;
+    cursor: pointer;
+    border: 2px solid #ffff;
+    border-radius: 5rem;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: 'Soulmaze', sans-serif;
+    margin-bottom: 3.75rem;
+}
+
+/* Tech section */
+.tech--h {
+    font-size: 67.77px;
+    font-family: 'Soulmaze', sans-serif;
+    margin: 0;
+    max-width: 470px;
+    padding-top: 3.75rem;
+    margin-bottom: 2.8125rem;
+}
+
+.tech--h span {
+    color: #E4BB97;
+}
+
+.tech--description {
+    font-size: 25.89px;
+    line-height: 141%;
+    font-family: 'Poppins', sans-serif;  
+    max-width: 885px; 
+}
+
+.tech--wrapper {
+    display: flex;
+    gap: 3.75rem;
+    padding-bottom: 9.375rem;
+    flex-wrap: wrap;
+}
+
+.tech--wrapper ul {
+    list-style-type: disc;
+    padding-left: 1rem;
+}
+
+.tech--wrapper li {
+    font-family: 'Soulmaze', sans-serif;
+    margin-bottom: 6px;
+}
+
+/* Projects section */
+.projects {
+    background-color: #FEF5EF;
+}
+
+.projects--h {
+    font-size: 67.77px;
+    font-family: 'Soulmaze', sans-serif;
+    margin: 0;
+    max-width: 470px;
+    padding-top: 3.75rem;
+    margin-bottom: 2.8125rem;
+}
+
+.projects--h span {
+    color: #ffffff;   
+}
+
+.projects--displays {
+    margin-top: 3.75rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    gap: 3.75rem;
+    padding-bottom: 300px;
+}
+
+.projects--displays .link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 45%);
+    color: #000000;
+    font-family: 'SoulMaze', sans-serif;
+    display: flex;
+    font-size: 0.85rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: scale(0);
+    transition: all 0.3s ease;
+}
+
+.projects--displays .link.active {
+    transform: scale(1);
+}
+
+.projects--duo:hover .link,
+.projects--solo:hover .link {
+    transform: scale(1);
+}
+
+.projects--displays .link a {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .75rem 1.25rem;
+    background-color: white;
+}
+
+.projects--duo {
+    /* width: 662px; */
+    height: 421px;
+    background-color: rgb(0 0 0 / 15%);
+    margin-bottom: 3.75rem;
+    width: 100%;
+}
+
+.projects--solo {
+    height: 760px;
+    width: 100%;
+    background-color: rgb(0 0 0 / 15%);
+}
+
+/* Footer */
+footer {
+    position: relative;
+}
+
+.footer {
+    border-top-right-radius: 3.125rem;
+    border-top-left-radius: 3.125rem;
+    height: 404px;
+    width: 100%;
+    max-width: 1384px;
+    margin-inline: auto;
+    background-color: rgb(0 0 0 / 100%);
+    position: relative;
+    transition: all 0.3s ease;
+    color: #ffffff;
+    transform: translateY(-5rem);
+    position: absolute;
+    top: -15rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: 'Soulmaze', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer--h {
+    font-size: 41.89px;
+    margin-top: 5.625rem;
+}
+
+.footer--copy {
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 3.75rem;
+}

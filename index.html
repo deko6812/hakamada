@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ehy Thatsuyha Jake Luena's portfolio AKA Jake, a Frontend Web Developer from the Cebu, Philippines">
+    <meta name="keywords" content="web developer, developer, frontend web developer, html css developer">
+    <meta name="image" content="./assets/images/me.jpg">
+    <meta name="url" content="https://jtzuya.tech/">
+    <meta name="type" content="person">
+
+    <link rel="stylesheet" href="./assets/normalize.css">
+    <link rel="stylesheet" href="./assets/loader.css">
+    <link rel="stylesheet" href="./assets/marquee.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/player.css">
+    <link rel="stylesheet" href="./assets/mediaQueries.css">
+    <link rel="icon" href="./assets/images/star.svg" type="image/svg">
+    <title>Ehy Thatsuyha Jake Luena | Portfolio</title>
+</head>
+<body>
+    <div class="loader">
+        <div class="blinder--container">
+            <div class="blinder"></div>
+            <div class="blinder"></div>
+            <div class="blinder"></div>
+            <div class="blinder"></div>
+            <div class="blinder"></div>
+        </div>
+    </div>
+
+    <div class="homepage">
+        <header class="page--container">
+            <a href="/" class="text-2xl text-[papayawhip] pt-32 ease-in">Ehy Thatsuyha Jake Luena</a>
+            <p class="header--p ease-in">Based in Cebu City Philippines</p>
+            <p class="header--p ease-in">Freelancing At Upwork</p>
+            <nav>
+                <a href="#about" class="ease-in header__link">About</a>
+                <a href="#tech" class="ease-in header__link">Technologies</a>
+                <a href="#projects" class="ease-in header__link">Projects</a>
+                <a href="#contact" class="ease-in header__link">Contact</a>
+            </nav>
+        </header>
+        <div class="mobile--header mobile page--container">
+            <a href="/" class="text-2xl text-[papayawhip] pt-32 ease-in">Ehy Thatsuyha Jake Luena</a>
+            <button class="menu-mob">
+                <span class="menu-mob__btn"></span>
+                <span class="menu-mob__trigger"></span>
+            </button>
+            <nav>
+                <div class="backdrop"></div>
+                <div class="misc">
+                    <p class="header--p ease-in">Based in Cebu City Philippines</p>
+                    <p class="header--p ease-in">Freelancing At Upwork</p>
+                </div>
+                <a href="#about" class="ease-in header__link">About</a>
+                <a href="#tech" class="ease-in header__link">Technologies</a>
+                <a href="#projects" class="ease-in header__link">Projects</a>
+                <a href="#contact" class="ease-in header__link">Contact</a>
+            </nav>
+        </div>
+
+        <section class="page--container">
+            <div class="mask--banner-h1">
+                <p class="banner--h1 banner--h">
+                    FRONTEND
+                    <img src="./assets/images/asterisk.svg" alt="asterisk" class="asterisk">
+                </p>
+            </div>
+
+            <div class="mask--banner-h2">
+                <p class="banner--h">WEB DEVELOPER</p>
+            </div>
+            <div class="mask--banner-description">
+                <p class="banner--description">I’m focused in helping individuals/teams develop and deploy their ideas on the cloud.</p>
+            </div>
+
+            <div class="banner--displays">
+                <div class="banner--solo image--containers">
+                    <img loading="lazy" class="img" src="./assets/images/cet.png" alt="cet">
+                </div>
+                <div>
+                    <div class="banner--bg-img">
+                        <div class="banner--duo image--containers">
+                            <img loading="lazy" class="img" src="./assets/images/siemes-app.png" alt="siemes web app">
+                            <div class="hover--project-state">
+                                <p class="project--title v2">Siemes App</p>
+                                <div class="project--stack">
+                                    <p style="padding-bottom: 0.25rem;">CMS mock web app week sprint build</p>
+                                    <p>Tech Stack:</p>
+                                    <ul>
+                                        <li>MySQL</li>
+                                        <li>ExpressJS</li>
+                                        <li>ReactJS</li>
+                                        <li>NodeJS</li>
+                                        <li>Tailwind</li>
+                                        <li>StripeAPI</li>
+                                        <li>AWS</li>
+                                    </ul>
+                                </div>
+                                <button class="watch--demo-btn">Watch Demo</button>
+                            </div>
+                        </div>
+                        <div class="video--demo">
+                            <div class="video--container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Pp3hcnm1Oh0?enablejsapi=1&version=3&playerapiid=ytplayer&start=39" title="Siemes Web App" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <button class="close--modal-btn">
+                                    <span class="video--modal-btn"></span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.3002 5.70996C18.1134 5.5227 17.8597 5.41747 17.5952 5.41747C17.3307 5.41747 17.077 5.5227 16.8902 5.70996L12.0002 10.59L7.11021 5.69996C6.92338 5.5127 6.66973 5.40747 6.40521 5.40747C6.1407 5.40747 5.88705 5.5127 5.70021 5.69996C5.31021 6.08996 5.31021 6.71996 5.70021 7.10996L10.5902 12L5.70021 16.89C5.31021 17.28 5.31021 17.91 5.70021 18.3C6.09021 18.69 6.72021 18.69 7.11021 18.3L12.0002 13.41L16.8902 18.3C17.2802 18.69 17.9102 18.69 18.3002 18.3C18.6902 17.91 18.6902 17.28 18.3002 16.89L13.4102 12L18.3002 7.10996C18.6802 6.72996 18.6802 6.08996 18.3002 5.70996Z" fill="black"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner--duo image--containers">
+                        <img loading="lazy" class="img" src="/assets/images/portfolio.png" alt="just a random abstraction">
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner--bg-img">
+                <div class="image--containers banner--bg-img">
+                    <img loading="lazy" class="banner--img img" src="./assets/images/todolist-app.png" alt="cet">
+                    <div class="hover--project-state">
+                        <p class="project--title">TodoList App</p>
+                        <div class="project--stack">
+                            <p>Tech Stack:</p>
+                            <ul>
+                                <li>MySQL</li>
+                                <li>ExpressJS</li>
+                                <li>ReactJS</li>
+                                <li>NodeJS</li>
+                                <li>TailwindCSS</li>
+                            </ul>
+                        </div>
+                        <button class="watch--demo-btn">Watch Demo</button>
+                    </div>
+                </div>
+                <div class="video--demo">
+                    <div class="video--container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/trALgXEGTmQ?enablejsapi=1&version=3&playerapiid=ytplayer&t=timestamp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <button class="close--modal-btn">
+                            <span class="video--modal-btn"></span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.3002 5.70996C18.1134 5.5227 17.8597 5.41747 17.5952 5.41747C17.3307 5.41747 17.077 5.5227 16.8902 5.70996L12.0002 10.59L7.11021 5.69996C6.92338 5.5127 6.66973 5.40747 6.40521 5.40747C6.1407 5.40747 5.88705 5.5127 5.70021 5.69996C5.31021 6.08996 5.31021 6.71996 5.70021 7.10996L10.5902 12L5.70021 16.89C5.31021 17.28 5.31021 17.91 5.70021 18.3C6.09021 18.69 6.72021 18.69 7.11021 18.3L12.0002 13.41L16.8902 18.3C17.2802 18.69 17.9102 18.69 18.3002 18.3C18.6902 17.91 18.6902 17.28 18.3002 16.89L13.4102 12L18.3002 7.10996C18.6802 6.72996 18.6802 6.08996 18.3002 5.70996Z" fill="black"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="marquee-wrapper">
+            <div class="marquee">
+                <div class="marquee-group"> 
+                    <div class="displays">
+                        <p class="outlined">Discuss your ideas</p>
+                        <img src="./assets/images/star.svg" alt="star separator">
+                    </div>
+                    <div class="displays">
+                        <p class="normal">Discuss your ideas</p>
+                        <img src="./assets/images/star.svg" alt="star separator">
+                    </div>
+                    <div class="displays">
+                        <p class="outlined">Discuss your ideas</p>
+                        <img src="./assets/images/star.svg" alt="star separator">
+                    </div>
+                    <div class="displays">
+                        <p class="normal">Discuss your ideas</p>
+                        <img src="./assets/images/star.svg" alt="star separator">
+                    </div>
+                </div>
+                <div aria-hidden="true" class="marquee-group"> 
+                    <div class="displays">
+                        <p class="outlined">Discuss your ideas</p>
+                        <img src="./assets/images/star.svg" alt="star separator">
+                    </div>
+                    <div class="displays">
+                        <p class="normal">Discuss your ideas</p>
+                        <img src="./assets/images/star.svg" alt="star separator">
+                    </div>
+                    <div class="displays">
+                        <p class="outlined">Discuss your ideas</p>
+                        <img src="./assets/images/star.svg" alt="star separator">
+                    </div>
+                    <div class="displays">
+                        <p class="normal">Discuss your ideas</p>
+                        <img src="./assets/images/star.svg" alt="star separator">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="page--container">
+                <p class="about--h">Fun Facts About Me<span>.</span></p>
+                <div class="about--content-wrapper">
+                    <p>Loves tinkering with anything that catches my eye on the internet!</p>
+                    <p>Eager to address intricate issues through innovative solutions.</p>
+                    <p>A compassionate helper of those in need.</p>
+                </div>
+                <button>
+                    <a href="#" class="resume" target="_blank" download="ehy-thatsuyha-jake-luena-resume">DOWNLOAD RESUME</a>
+                </button>
+            </div>
+        </section>
+
+        <section class="tech page--container" id="tech">
+            <p class="tech--h">Tech<span>.</span></p>
+            <p class="tech--description">I have acquired a diverse set of skills and expertise in various technologies and tools through self-directed learning and rigorous bootcamp training.</p>
+            <div class="tech--wrapper">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SASS/SCSS</li>
+                    <li>Tailwindcss</li>
+                    <li>LESS</li>
+                    <li>Material Ui</li>
+                    <li>JQuery</li>
+                    <li>Liquid</li>
+                    <li>Bootstrap</li>
+                    <li>Responsive Web <br>Design (RWD)</li>
+                </ul>
+                <ul>
+                    <li>JAVASCRIPT</li>
+                    <li>NODEJS</li>
+                    <li>EXPRESSJS</li>
+                    <li>SocketIO</li>
+                    <li>EJS</li>
+                    <li>AJAX</li>
+                    <li>ORM</li>
+                    <li>APIs</li>
+                    <li>Mocha</li>
+                    <li>Chai</li>
+                </ul>
+                <ul>
+                    <li>ReactJS</li>
+                    <li>MySQL</li>
+                    <li>Postgres</li>
+                    <li>Redis</li>
+                    <li>Git</li>
+                    <li>Github</li>
+                    <li>PHP</li>
+                    <li>Codeigniter</li>
+                    <li>OOp</li>
+                    <li>SQL Queries</li>
+                </ul>
+                <ul>
+                    <li>PG4Admin</li>
+                    <li>MySQL Workbench</li>
+                    <li>Figma</li>
+                    <li>Netlify</li>
+                    <li>Vercel</li>
+                    <li>AWS</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="page--container">
+                <p class="projects--h">PROJECTS<span>.</span></p>
+
+                <div class="projects--displays">
+                    <div>
+                        <div class="projects--duo image--containers">
+                            <img loading="lazy" class="img" src="./assets/images/plakativ.png" alt="cet">
+                            <div class="link active">
+                                <a href="https://plakativ.store/collections/fotografie" target="_blank">Visit</a>
+                            </div>
+                        </div>
+                        <div class="projects--duo image--containers">
+                            <img loading="lazy" class="img" src="./assets/images/dose.png" alt="cet">
+                            <div class="link">
+                                <a href="https://doseoflashes.com/" target="_blank">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects--solo image--containers">
+                        <img loading="lazy" class="img" src="./assets/images/ecobin.png" alt="ecobin">
+                        <div class="link">
+                            <a href="https://www.ecobin.com.au/" target="_blank">Visit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact">
+            <div class="footer">
+                <div>
+                    <p class="footer--h">Let's get in touch</p>
+                    <p class="footer--email">Jtzuya@gmail.com</p>
+                    <p class="footer--phone">+63 9167030237</p>
+                </div>
+
+                <p class="footer--copy">Copyright &copy; 2023 Ehy Thatsuyha Jake Luena. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./main.js" type="module" defer></script>
+    <script src="./observer.js" type="module" defer></script>
+</body>
+</html>

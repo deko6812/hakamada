@@ -1,0 +1,84 @@
+:root {
+    --gap: 2rem;
+    --duration: 30s;
+    --scroll-start: 0;
+    --scroll-end: calc(-100% - var(--gap));
+    --bg-clr: rgb(0 0 0 / 100%);
+    --text-clr: rgb(255 255 255 / 100%);
+    --font-out: 'Soulmaze Outline', system-ui, sans-serif;
+    --font-norm: 'Soulmaze', system-ui, sans-serif;
+}
+
+h1 {
+    font-size: 7rem;
+}
+
+.marquee-wrapper {
+    margin: auto;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.marquee {
+    display: flex;
+    gap: var(--gap);
+    background-color: var(--bg-clr);
+    color: var(--text-clr);
+}
+
+.marquee-group {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: var(--gap); */
+    min-width: 100%;
+    animation: scroll var(--duration) linear infinite;
+}
+
+.marquee .displays {
+    display: flex;
+    align-items: center;
+}
+
+.marquee .outlined {
+    font-family: var(--font-out);
+    font-size: 2.5rem;
+    padding-inline: 3.75rem;
+    width: max-content;
+}
+
+.marquee .normal {
+    font-family: var(--font-norm);
+    font-size: 2.5rem;
+    padding-inline: 3.75rem;
+    width: max-content;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(var(--scroll-start));
+    }
+
+    to {
+        transform: translateX(var(--scroll-end));
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .marquee-group {
+        animation-play-state: paused;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .marquee .normal,
+    .marquee .outlined {
+        font-size: 1.5rem;
+        padding-inline: 1.25rem;
+    }
+
+    .displays img {
+        width: 35px;
+    }
+}
